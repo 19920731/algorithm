@@ -27,23 +27,25 @@ public class Test001 {
 			tmpSum += elements.get(i);
 
 			if (tmpSum < 20) {
-				stack.add(elements.get(i));
+				// System.out.println("push : " + elements.get(i));
+				stack.push(elements.get(i));
 			} else {
-				tmpSum = 0;				
-			}
-			if (tmpSum == 0) {
-				result.add(stack);				
-				stack = new Stack<Integer>();
-				i--;
-			}
-			
-			if (i == 13) {
+				// System.out.println("add list");
 				result.add(stack);
-				System.out.println(result);
+				
+				stack = new Stack<Integer>();
+				stack.push(elements.get(i));
+				
+				tmpSum = elements.get(i);
 			}
 			
+			if (elements.size() - 1 == i) {
+				// System.out.println("last add");
+				result.add(stack);
+			}
 		}
-
+		
+		System.out.println("result : " + result);
 		return result;
 	}
 
