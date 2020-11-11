@@ -16,6 +16,18 @@ public class Test001 {
 
 		return count;
 	}
+	
+	public static int countBit2(int value) {
+		int count = 0;
+		while (value != 0) {
+			if (value % 2 == 1) {
+				count++;
+			}
+			value /= 2;
+		}
+
+		return count;
+	}
 
 	public static List<Stack<Integer>> doDo() {
 		final List<Integer> elements = Arrays.asList(9, 7, 6, 6, 4, 3, 4, 5, 3, 4, 3, 4, 1, 2);
@@ -50,8 +62,13 @@ public class Test001 {
 	}
 
 	public static void main(String[] args) {
+		int intNum = 7;
+		System.out.println("intNum(Binary String) : " + Integer.toBinaryString(intNum));
 		// 1번 문제 - 진수로 변환 후 1의 갯수 파악
-		System.out.println(countBit(15));
+		System.out.println(countBit(intNum));
+		
+		// 1번 문제(2) - 진수로 변환 후 1의 갯수 파악
+		System.out.println(countBit2(intNum));
 		
 		// 2번 문제 - 중량이 20을 넘지않도록 물건 넣기
 		doDo();
