@@ -1,4 +1,4 @@
-package etc;
+package algorithm.etc;
 
 public class PrimeNumber {
 

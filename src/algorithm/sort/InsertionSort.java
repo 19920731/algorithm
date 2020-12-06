@@ -1,4 +1,4 @@
-package sort;
+package algorithm.sort;
 
 public class InsertionSort {
 
@@ -11,7 +11,7 @@ public class InsertionSort {
 			tmp = arr[i];
 			j = i - 1;
 			while (j >= 0 && tmp < arr[j]) {
-				arr[j + 1] = arr[j]; // ºñ±³´ë»óÀÌ Å« °æ¿ì ¿À¸¥ÂÊÀ¸·Î ¹Ð¾î³¿
+				arr[j + 1] = arr[j]; // ï¿½ñ±³´ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¾î³¿
 				j--;
 			}
 			arr[j + 1] = tmp;
