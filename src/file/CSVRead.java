@@ -17,7 +17,7 @@ public class CSVRead {
 		}
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
 		String filePath = "C:\\Users\\choi\\dev\\git\\Java\\data\\member.csv";
 		FileInputStream input = null;
