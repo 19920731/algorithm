@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.ArrayList;
+import java.util.HashMap;
 public class CSVRead {
 
 	public static void main(String[] args) throws IOException {
@@ -14,6 +15,8 @@ public class CSVRead {
 		InputStreamReader reader = null;
 		BufferedReader in = null;
 		String memberData = "";
+		ArrayList<HashMap<String, String>> memberList = new ArrayList<HashMap<String,String>>();
+		HashMap<String, String> map = null;
 		
 		try {
 			input = new FileInputStream(filePath);
@@ -21,8 +24,17 @@ public class CSVRead {
 			in = new BufferedReader(reader);
 		
 			while ((memberData = in.readLine()) != null) {
-				System.out.println(memberData);
-			}			
+				// System.out.println(memberData);
+				map = new HashMap<String, String>();
+				map.put("memberId", memberData.split(",")[0]);
+				map.put("memberName", memberData.split(",")[1]);
+				map.put("memberTel", memberData.split(",")[2]);
+				
+				memberList.add(map);
+			}
+			
+			System.out.println(memberList);
+			
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		} finally {
