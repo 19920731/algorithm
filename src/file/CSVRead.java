@@ -10,7 +10,7 @@ public class CSVRead {
 
 	public static void main(String[] args) throws IOException {
 
-		String filePath = "C:\\Users\\choi\\dev\\git\\Java\\src\\file\\member.csv";
+		String filePath = "C:\\Users\\choi\\dev\\git\\Java\\data\\member.csv";
 		FileInputStream input = null;
 		InputStreamReader reader = null;
 		BufferedReader in = null;
