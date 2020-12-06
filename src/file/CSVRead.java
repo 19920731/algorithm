@@ -71,7 +71,11 @@ public class CSVRead {
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		} finally {
-			in.close();
+			try {
+				in.close();
+			} catch (IOException e) {
+				System.out.println(e.toString());
+			}
 		}
 	}
 
