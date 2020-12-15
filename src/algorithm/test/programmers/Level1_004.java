@@ -3,7 +3,7 @@ package algorithm.test.programmers;
 import java.util.ArrayList;
 
 // 프로그래머스 > 완전탐색 > 모의고사
-public class Test005 {
+public class Level1_004 {
 
 	public static int[] solution(int[] answers) {
         int[] aPattern = {1, 2, 3, 4, 5};

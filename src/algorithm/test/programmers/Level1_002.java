@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 // 프로그래머스 > 해시 > 완주하지 못한 선수
-public class Test003 {
+public class Level1_002 {
 
 	public static String solution(String[] participant, String[] completion) {
 		String answer = "";

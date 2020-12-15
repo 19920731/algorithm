@@ -2,7 +2,7 @@ package algorithm.test.programmers;
 import java.util.Arrays;
 
 // 프로그래머스 > 정렬 > K번째수
-public class Test001 {
+public class Level1_001 {
 
 	public static int[] solution(int[] array, int[][] commands) {
 		int[] answer = new int[commands.length];

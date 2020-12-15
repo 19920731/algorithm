@@ -3,7 +3,7 @@ package algorithm.test.programmers;
 import java.util.ArrayList;
 
 // 프로그래머스 > 연습문제 > 같은 숫자는 싫어
-public class Test010 {
+public class Level1_009 {
 
 	public static int[] solution(int[] arr) {
 		int prevNum = -1;
@@ -15,8 +15,6 @@ public class Test010 {
 			}
 			prevNum = arr[i];
 		}
-		
-		System.out.println(list);
 		
 		int[] answer = new int[list.size()];
 		for (int i = 0; i < answer.length; i++) {

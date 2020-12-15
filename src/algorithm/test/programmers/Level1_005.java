@@ -1,7 +1,7 @@
 package algorithm.test.programmers;
 
 // 프로그래머스 > 탐욕법(Greedy) > 체육복
-public class Test006 {
+public class Level1_005 {
 
 	public static int solution(int n, int[] lost, int[] reserve) {
 		int[] student = new int[n];

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 // 프로그래머스 > 월간 코드 챌린지 시즌1 > 두 개 뽑아서 더하기
-public class Test004 {
+public class Level1_003 {
 
 	public static int[] solution(int[] numbers) {
 		HashSet<Integer> set = new HashSet<Integer>();

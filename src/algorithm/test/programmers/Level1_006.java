@@ -1,7 +1,7 @@
 package algorithm.test.programmers;
 
 // 프로그래머스 > 연습문제 > 2016년
-public class Test007 {
+public class Level1_006 {
 
 	public static String solution(int a, int b) {
 		int[] day = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

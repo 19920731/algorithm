@@ -1,7 +1,7 @@
 package algorithm.test.programmers;
 
 // 프로그래머스 > 연습문제 > 가운데 글자 가져오기
-public class Test008 {
+public class Level1_007 {
 
 	public static String solution(String s) {
         StringBuffer sb = new StringBuffer(2);
