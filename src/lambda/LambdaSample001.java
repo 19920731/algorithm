@@ -30,6 +30,10 @@ public class LambdaSample001 {
 			System.out.println("람다 방식의 호출!");
 		};		
 		r3.run();
+		
+		// 람다 (코드 블록이 한줄인 경우, {} 생략 가능)
+		Runnable r4 = () -> System.out.println("람다 방식의 호출2!");		
+		r4.run();
 	}
 
 }
