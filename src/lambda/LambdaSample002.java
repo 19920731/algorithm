@@ -1,7 +1,7 @@
 package lambda;
 
 interface SquareIF {
-	public abstract int Square(int num);	
+	public abstract int square(int num);	
 }
 
 public class LambdaSample002 {
@@ -14,7 +14,7 @@ public class LambdaSample002 {
 		SquareIF sif1 = (int a) -> {
 			return a * a;
 		};		
-		System.out.println(sif1.Square(1)); // 1
+		System.out.println(sif1.square(1)); // 1
 		
 		
 		/*
@@ -23,7 +23,7 @@ public class LambdaSample002 {
 		SquareIF sif2 = (a) -> {
 			return a * a;
 		};
-		System.out.println(sif2.Square(2)); // 4
+		System.out.println(sif2.square(2)); // 4
 		
 		
 		/*
@@ -32,7 +32,7 @@ public class LambdaSample002 {
 		SquareIF sif3 = a -> {
 			return a * a;
 		};
-		System.out.println(sif3.Square(3)); // 9
+		System.out.println(sif3.square(3)); // 9
 		
 		
 		/*
@@ -40,7 +40,7 @@ public class LambdaSample002 {
 		 *  다만, return구문을 생략해야한다.
 		 */
 		SquareIF sif4 = a -> a * a;
-		System.out.println(sif4.Square(4)); // 16
+		System.out.println(sif4.square(4)); // 16
 		
 	}
 
