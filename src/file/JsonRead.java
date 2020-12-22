@@ -1,6 +1,7 @@
 package file;
 
-import java.io.FileReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -25,8 +26,10 @@ public class JsonRead {
 		HashMap<String, String> map = null;
 		
 		try {
+			FileInputStream fis = new FileInputStream(filePath);
+			InputStreamReader in = new InputStreamReader(fis);
 			JSONParser parser = new JSONParser();
-			Object obj = parser.parse(new FileReader(filePath));
+			Object obj = parser.parse(in);
 			JSONObject jsonObject = (JSONObject)obj;
 			String date = (String)jsonObject.get("date");
 			System.out.println("date : " + date);
