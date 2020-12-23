@@ -9,24 +9,24 @@ public class BFS {
 	public static boolean[] visited = new boolean[9];
 	public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 
-	public static void dfs(int x) {
+	public static void bfs(int x) {
 		Queue<Integer> queue = new LinkedList<Integer>();
-        queue.add(x);
-        visited[x] = true;
- 
-        while (!queue.isEmpty()) {
-            int a = queue.poll();
-            System.out.print(a + " ");
+		queue.add(x);
+		visited[x] = true;
+
+		while (!queue.isEmpty()) {
+			int a = queue.poll();
+			System.out.print(a + " ");
 			for (int i = 0; i < graph.get(a).size(); i++) {
 				if (!visited[graph.get(a).get(i)]) {
 					visited[graph.get(a).get(i)] = true;
 					queue.add(graph.get(a).get(i));
 				}
 			}
-        }
-		
+		}
+
 		// result(방문순서) : 1 2 3 8 7 4 5 6
-		
+
 	}
 
 	public static void main(String[] args) {
@@ -81,7 +81,7 @@ public class BFS {
 		graph.get(8).add(1);
 		graph.get(8).add(7);
 
-		dfs(1);
+		bfs(1);
 	}
 
 }
