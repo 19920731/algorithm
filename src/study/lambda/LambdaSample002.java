@@ -1,4 +1,4 @@
-package lambda;
+package study.lambda;
 
 interface SquareIF {
 	public abstract int square(int num);	

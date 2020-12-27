@@ -1,4 +1,4 @@
-package lambda;
+package study.lambda;
 
 class RunTest implements Runnable {
 	@Override

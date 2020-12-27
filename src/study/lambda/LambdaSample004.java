@@ -1,4 +1,4 @@
-package lambda;
+package study.lambda;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Inheritance;
+package study.inheritance;
 
 public class InheritanceTest {
 

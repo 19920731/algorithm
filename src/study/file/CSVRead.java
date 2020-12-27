@@ -1,4 +1,4 @@
-package file;
+package study.file;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

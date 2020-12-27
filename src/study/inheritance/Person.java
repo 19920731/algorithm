@@ -1,4 +1,4 @@
-package Inheritance;
+package study.inheritance;
 
 public class Person {
 	public void walk() {

@@ -1,4 +1,4 @@
-package lambda;
+package study.lambda;
 
 interface SumIF {
 	public abstract int sum(int num);	
